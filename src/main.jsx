@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx';
 import Docs from './component/Docs.jsx';
 import Home from './component/Home.jsx';
-import Components from './component/components.jsx';
+import Uicomponent from './component/Uicomponent.jsx';
 import Blog from './component/Blog.jsx';
 import Dashboard from './component/Dashboard.jsx';
 
@@ -25,7 +25,7 @@ const router= createBrowserRouter([
       },
       {
         path: '/component',
-        element: <Components/>
+        element: <Uicomponent/>
       },
       {
         path: '/docs',
