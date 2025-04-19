@@ -1,46 +1,39 @@
 import React, { useState } from 'react';
 
-// React Functional Component
+
 const Docs = () => {
-  // useState hook to manage the state for count
-  const [count, setCount] = useState(0);  // Initializing state variable 'count' with 0
-  const [isHovered, setIsHovered] = useState(false); // State variable to track hover effect on the button
+ 
+  const [isHovered, setIsHovered] = useState(false); 
 
-  // handleClick function to increment the count when the button is clicked
-  const handleClick = () => {
-    setCount(count + 1);  // Increment count by 1 each time the button is clicked
-  };
 
-  // Mouse event functions to handle hover effect on the button
   const handleMouseEnter = () => {
-    setIsHovered(true);  // Set isHovered to true when the mouse enters the button
+    setIsHovered(true);  
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false); // Set isHovered to false when the mouse leaves the button
+    setIsHovered(false); 
   };
 
   return (
     <div className="bg-gray-100 p-6 rounded-lg text-center">
-      {/* Heading with Tailwind classes for styling */}
+
       <h1 className="text-green-500 text-2xl">Welcome to My Website!</h1>
 
-      {/* Paragraph displaying the current count */}
-      <p className="text-gray-800 text-lg">Current Count: {count}</p>
+      <p className="text-gray-800 text-lg">Current Count: 1</p>
 
-      {/* Button with hover effect */}
+     
       <button
-        // Tailwind CSS classes for button styling
+       
         className={`bg-green-500 text-white py-2 px-4 rounded-md text-lg cursor-pointer transition duration-300 
-        ${isHovered ? 'bg-green-600' : ''}`} // Applying a darker green shade when hovered
-        onClick={handleClick}              // When the button is clicked, it triggers handleClick to increment count
-        onMouseEnter={handleMouseEnter}    // When mouse enters the button, it triggers handleMouseEnter to activate hover
-        onMouseLeave={handleMouseLeave}    // When mouse leaves the button, it triggers handleMouseLeave to remove hover
+        ${isHovered ? 'bg-green-600' : ''}`} 
+                    
+        onMouseEnter={handleMouseEnter}   
+        onMouseLeave={handleMouseLeave}   
       >
         Increment Count
       </button>
 
-      {/* Explanation of Tailwind CSS classes used */}
+      
       <p className="mt-4 text-blue-600">
         <strong>Explanation of Tailwind CSS classes:</strong>
       </p>

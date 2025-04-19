@@ -1,14 +1,18 @@
-import Docs from './component/Docs'
-import Header from './component/Header'
 import Navbar from './component/Navbar'
+import Sidebar from './component/Sidebar'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <Header/>
-      <Navbar/>
-      <Docs/>
+      <Sidebar />
+      <div className="ml-72">
+        <Navbar /> 
+        <main className="p-6">
+          <Outlet />
+        </main>
+      </div>
     </>
   )
 }
