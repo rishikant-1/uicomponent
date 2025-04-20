@@ -26,12 +26,11 @@ function Sidebar() {
       {/* Sidebar */}
       <div
         className={`
-          fixed top-0 left-0 w-72 h-screen bg-indigo-600 text-white flex flex-col justify-between p-4 z-50
+          fixed top-0 left-0 w-72 h-screen border-r border-gray-600 bg-gray-900 text-white flex flex-col justify-between p-4 z-50
           transform transition-transform duration-300
           ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:flex
         `}
       >
-        {/* Logo and App Name */}
         <div>
           <div className="flex items-center gap-2 mb-8">
             <img src="https://st5.depositphotos.com/81007046/67239/v/450/depositphotos_672391528-stock-illustration-letter-logo-template-illustration-design.jpg" alt="Logo" className="w-8 h-8" />
@@ -40,7 +39,7 @@ function Sidebar() {
 
           {/* Navigation */}
           <nav className="space-y-2">
-            <NavItem icon={<FaHome />} label="Dashboard" to="/" />
+            <NavItem icon={<FaHome />} label="Dashboard" to="/dashboard" />
             <NavItem icon={<FaUserFriends />} label="Team" to="/team" />
             <NavItem icon={<FaFolder />} label="Projects" to="/projects" />
             <NavItem icon={<FaCalendarAlt />} label="Calendar" to="/calendar" />

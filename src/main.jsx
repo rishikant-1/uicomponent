@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css'
 import App from './App.jsx';
-import Docs from './component/Docs.jsx';
-import Home from './component/Home.jsx';
-import Uicomponent from './component/Uicomponent.jsx';
-import Blog from './component/Blog.jsx';
-import Dashboard from './component/Dashboard.jsx';
+import Docs from './reuse-components/page/Docs.jsx';
+import Home from './reuse-components/page/Home.jsx';
+import Uicomponent from './reuse-components/page/Uicomponent.jsx';
+import Blog from './reuse-components/page/Blog.jsx';
+import Dashboard from './reuse-components/page/Dashboard.jsx';
 
 
 const router= createBrowserRouter([
@@ -17,11 +17,11 @@ const router= createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Dashboard/>
+        element: <Home/>
       },
       {
-        path: '/Home',
-        element: <Home/>
+        path: '/dashboard',
+        element: <Dashboard/>
       },
       {
         path: '/component',
