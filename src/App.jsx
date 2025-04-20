@@ -6,12 +6,14 @@ function App() {
 
   return (
     <>
-      <Sidebar />
-      <div className="md:ml-72 ml-0 bg-gray-900">
-        <Navbar /> 
-        <main className="bg-gray-900">
-          <Outlet />
-        </main>
+      <div className="flex">
+        <Sidebar />
+        <div className="flex-1 md:ml-72 ml-0 bg-gray-900 min-h-screen">
+          <Navbar />
+          <main className="p-4">
+            <Outlet />
+          </main>
+        </div>
       </div>
     </>
   )

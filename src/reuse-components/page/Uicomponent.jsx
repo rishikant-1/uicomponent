@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../ui/Layout.jsx'
+import { Outlet } from 'react-router-dom'
 
 function Uicomponent() {
   return (

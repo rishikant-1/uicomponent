@@ -8,6 +8,7 @@ import Home from './reuse-components/page/Home.jsx';
 import Uicomponent from './reuse-components/page/Uicomponent.jsx';
 import Blog from './reuse-components/page/Blog.jsx';
 import Dashboard from './reuse-components/page/Dashboard.jsx';
+import Uibutton from './reuse-components/ui/Uibutton.jsx';
 
 
 const router= createBrowserRouter([
@@ -25,7 +26,11 @@ const router= createBrowserRouter([
       },
       {
         path: '/component',
-        element: <Uicomponent/>
+        element: <Uicomponent/>,
+      },
+      {
+        path: '/component/buttons',
+        element: <Uibutton/>
       },
       {
         path: '/docs',

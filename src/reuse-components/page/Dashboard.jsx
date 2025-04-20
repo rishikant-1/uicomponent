@@ -1,36 +1,36 @@
-import React from "react";
+import React from 'react'
+import uiiname from '../../assets/ui.png'
 
-export default function ComingSoon() {
+function Dashboard() {
   return (
-    <div className="min-h-[90vh] bg-gray-950 flex flex-col items-center justify-center px-4 text-center">
-      {/* Logo */}
-      <div className="mb-6">
-        <div className="text-3xl font-bold text-indigo-600">UI-Zone</div>
-      </div>
+    <div className=' bg-gray-900'>
+      <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 ">
+          <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20  lg:pt-0">
+            <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
+              <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+              <defs>
+                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                  <stop stop-color="#7775D6" />
+                  <stop offset="1" stop-color="#E935C1" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-30 lg:text-left">
+              <h2 class="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">Boost your productivity. Start using our app today.</h2>
+              <p class="mt-6 text-lg/8 text-pretty text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
+                <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="relative mt-16 h-80 lg:mt-8">
+              <img class="absolute top-0 left-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src={uiiname}  alt="App screenshot" width="1824" height="1080"/>
+            </div>
+          </div>
+        </div>
 
-      <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 ">
-        Coming Soon
-      </h1>
-
-      {/* Subtitle */}
-      <p className="text-gray-600 text-lg max-w-md mb-6">
-        We're building something amazing. Our dashboard will be available soon!
-      </p>
-
-      <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-md">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        />
-        <button className="px-5 py-2 text-nowrap bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
-          Notify Me
-        </button>
-      </div>
-
-      <p className="mt-8 text-sm text-gray-400">
-        © {new Date().getFullYear()} UI-Zone. All rights reserved.
-      </p>
     </div>
-  );
+  )
 }
+
+export default Dashboard
